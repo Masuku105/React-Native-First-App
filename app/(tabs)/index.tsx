@@ -1,9 +1,9 @@
 
 import {View,Text,ActivityIndicator,ScrollView,Image,FlatList,} from "react-native";
-import { useRouter } from "expo-router";
 import {images} from "@/constants/images";
 import {icons} from "@/constants/icons";
 import  SearchBar from "@/components/SearchBar";
+import {useRouter} from "expo-router";
 
 const Index = () => {
     const router = useRouter();
@@ -14,7 +14,10 @@ const Index = () => {
                         contentContainerStyle={{minHeight:"100%", paddingBottom:10}}>
                 <Image source={icons.logo} className="w-12 h10 mt-20 mb-5 mx-auto"/>
                 <View>
-                    <SearchBar/>
+                    <SearchBar
+                        onPress={() => router.push("//searchh")}
+                        placeholder="Search for a movie"
+                    />
                 </View>
             </ScrollView>
 
