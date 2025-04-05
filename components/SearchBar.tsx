@@ -5,7 +5,7 @@ import {icons} from "@/constants/icons";
 interface Props {
    placeholder: string;
    onPress?: () => void;
-   value: string;
+   value?: string;
    onChangeText?: (value: string) => void;
 }
 const SearchBar = ({placeholder, onPress, value, onChangeText}:Props) => {
@@ -16,7 +16,7 @@ const SearchBar = ({placeholder, onPress, value, onChangeText}:Props) => {
                 onPress={onPress}
                 placeholder={placeholder}
                 value={value}
-                onChangeText= {onChangeText}
+                onChangeText = {onChangeText}
                 placeholderTextColor="#a8b5db"
                 className="flex-1 ml2 text-white"
             />
