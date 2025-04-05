@@ -11,10 +11,10 @@ function TabIcon({ focused, icon, title }: any) {
                 source={images.highlight}
                 className="flex flex-row w-full flex-1 min-w-[112px] min-h-14 mt-4 justify-center items-center rounded-full overflow-hidden"
             >
-                <Image source={icon} tintColor="#151312" className="size-5" />
-                <Text className="text-secondary text-base font-semibold ml-2">
-                    {title}
-                </Text>
+            <Image source={icon} tintColor="#151312" className="size-5" />
+            <Text className="text-secondary text-base font-semibold ml-2">
+                {title}
+            </Text>
             </ImageBackground>
         );
     }
@@ -41,9 +41,9 @@ export default function TabsLayout() {
                 tabBarStyle: {
                     flexGrow:true,
                     backgroundColor: "#0F0D23",
-                    borderRadius:15,
-                    marginBlock:40,
-                    height: 52,
+                    borderRadius:25,
+                    marginBlock:50,
+                    height: 50,
                     position: "absolute",
                     overflow: "hidden",
                     borderWidth: 1,
